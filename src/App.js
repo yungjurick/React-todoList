@@ -13,17 +13,17 @@ class App extends Component {
     todos: [
       {
         id: 0,
-        text: '앵귤러 배우고',
+        text: 'Learn New Frameworks!',
         checked: true
       },
       {
         id: 1,
-        text: '리액트 배우고',
+        text: 'Finish My Homework!',
         checked: false
       },
       {
         id: 2,
-        text: '뷰 배우자',
+        text: 'Call Parents',
         checked: false
       }
     ]
@@ -79,7 +79,7 @@ class App extends Component {
     return (
       <div className="App">
         <div className="header">
-          <h1>오늘 뭐할까?</h1>
+          <h1>To Do List with React</h1>
         </div>
         <CreateForm onSubmit={this.handleCreate} onChange={this.randomFunction}/>
         <div className="white-box">
